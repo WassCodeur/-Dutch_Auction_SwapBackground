@@ -44,6 +44,7 @@ contract DutschAuction {
         uint256 _price,
         uint256 _duration,
         uint256 _decreaseRate,
+   
         address _token
     ) public {
         require(_price > 0, "Price must be greater than 0");
@@ -72,7 +73,7 @@ contract DutschAuction {
 
     function buy(uint256 auctionId, address tokenBAddr) public {
         require(!isFinalized[auctionId], "Auction is already finalized");
-        require(block.timestamp < endTime, "Auction has ended");
+        require(block.timestamp < auctions[auctionId].endTime, "Auction has ended");
         require(auctions[auctionId].seller != msg.sender, "Seller cannot buy");
         require(
             auctions[auctionId].buyer == address(0),

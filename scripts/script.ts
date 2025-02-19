@@ -62,8 +62,8 @@ async function main() {
 
 
     await ERC20TokenB.transfer(buyer.address, price);
-    await ERC20TokenB.approve(auction.target, price);
-    const tx2 = await auction.buy(1, ERC20TokenB.target);
+    await ERC20TokenB.connect(buyer).approve(auction.target, price);
+    const tx2 = await auction.connect(buyer).buy(1, ERC20TokenB.target);
     await tx2.wait();
     console.log("Auction bought");
     console.log(tx2);

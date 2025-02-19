@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/wasscodeur/web3/cohort/evection-test/Dutch_Auction_SwapBackground/contracts/DutschAuction.sol": {
-      "lastModificationDate": 1739992403215,
-      "contentHash": "11f4d68298a48c29e9d9ccd3c894de2a",
+      "lastModificationDate": 1739993075420,
+      "contentHash": "a2f824957ef2512a1ffcc27aa34a4329",
       "sourceName": "contracts/DutschAuction.sol",
       "solcConfig": {
         "version": "0.8.20",
