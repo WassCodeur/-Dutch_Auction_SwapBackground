@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/wasscodeur/web3/cohort/evection-test/Dutch_Auction_SwapBackground/contracts/DutschAuction.sol": {
-      "lastModificationDate": 1739993075420,
-      "contentHash": "a2f824957ef2512a1ffcc27aa34a4329",
+      "lastModificationDate": 1739993967360,
+      "contentHash": "6aa18a3970b7930629d43d953a4fbb42",
       "sourceName": "contracts/DutschAuction.sol",
       "solcConfig": {
         "version": "0.8.20",
@@ -30,7 +30,6 @@
         }
       },
       "imports": [
-        "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol",
         "./ERC20Token.sol"
       ],
       "versionPragmas": [
