@@ -110,6 +110,7 @@ describe("DutschAuction", function () {
     });
 
     describe("Withdraw", function () {
+        
 
         it("should not allow a seller to withdraw if the auction is not finalized", async function () {
             const { auction, tokenA, tokenB, seller } = await loadFixture(deployDutschAuctionFixture);

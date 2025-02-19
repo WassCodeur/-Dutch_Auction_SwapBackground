@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
 import "./ERC20Token.sol";
 
 contract DutschAuction {
@@ -68,7 +67,7 @@ contract DutschAuction {
             buyer: address(0)
         });
         auctionCount++;
-        // emit AuctionCreated(msg.sender, _price, _duration, _decreaseRate);
+        emit AuctionCreated(msg.sender, _price, _duration, _decreaseRate);
     }
 
     function buy(uint256 auctionId, address tokenBAddr) public {
